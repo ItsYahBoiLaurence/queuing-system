@@ -1,4 +1,4 @@
-import { CalendarCheck2, CalendarX2 } from "lucide-react";
+import { ArrowRight, CalendarCheck2, CalendarX2 } from "lucide-react";
 
 export default function Home() {
   const cardContainer = "flex flex-col gap-5 items-center ";
@@ -16,13 +16,13 @@ export default function Home() {
           <div className="flex gap-5 justify-center flex-row min-h-[250px] ">
             <div className={`${card} ${centerGrid}`}>
               <div className={`${cardContainer}`}>
-                <CalendarCheck2 size={"70px"} className="text-[#E99D51]" />
+                <CalendarCheck2 size={"70px"} className="text-gold" />
                 <p className="w-[70%] ">With Appointment</p>
               </div>
             </div>
             <div className={`${card} ${centerGrid}`}>
               <div className={`${cardContainer}`}>
-                <CalendarX2 size={"70px"} className="text-[#E99D51]" />
+                <CalendarX2 size={"70px"} className="text-gold" />
                 <p className="w-[70%]">Without Appointment</p>
               </div>
             </div>
@@ -36,6 +36,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <a
+        href="/panel"
+        className="flex flex-row gap-1 items-center text-primary underline"
+      >
+        Go to Queue Panel <ArrowRight />
+      </a>
     </div>
   );
 }
