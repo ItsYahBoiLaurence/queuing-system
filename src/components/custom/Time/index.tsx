@@ -17,7 +17,6 @@ export default function Time() {
     year: "numeric",
   });
 
-  // Format weekday (Tuesday)
   const weekday = time.toLocaleDateString("en-US", {
     weekday: "long",
   });

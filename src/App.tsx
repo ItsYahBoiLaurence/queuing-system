@@ -3,6 +3,7 @@ import { AppLayout } from "./components/layout";
 import NotFound from "./pages/not-found";
 import Home from "./pages/home";
 import Panel from "./pages/panel";
+import GenerateQueue from "./pages/generate-queue";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<AppLayout />}>
         <Route index element={<Home />} />
         <Route path="panel" element={<Panel />} />
+        <Route path="generate-queue/:category" element={<GenerateQueue />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
