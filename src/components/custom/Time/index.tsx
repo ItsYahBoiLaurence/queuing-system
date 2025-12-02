@@ -30,7 +30,7 @@ export default function Time() {
   });
 
   return (
-    <p className="font-bold text-lg text-white flex gap-5">
+    <p className="font-bold text-xl text-white flex gap-5">
       <span> {formattedDate}</span> |<span> {weekday}</span> |
       <span>{formattedTime}</span>
     </p>

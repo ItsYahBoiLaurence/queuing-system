@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className={`bg-primary p-5 ${flexContainer} justify-between`}>
       <div className={`${flexContainer} flex items-center gap-2`}>
-        <img src="/logo.svg" />
+        <img src="/logo.svg" className="size-20" />
         <p className="font-bold uppercase text-white text-4xl">
           Kalinga ng Bayan
         </p>
